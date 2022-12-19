@@ -1,4 +1,4 @@
-
+//#region Initialisers
 let CurrentSeason;
 let CurrentChallenge;
 let CurrentEpisode;
@@ -10357,7 +10357,7 @@ function Placements() {
       {
       TopsQueens.push(Tops[1]);
 
-        if(TopsQueens[0].perfomancescore < 6 && TopsQueens[1].perfomancescore < 6)
+        if(TopsQueens[0].perfomancescore < 7 && TopsQueens[1].perfomancescore < 7)
           {
             doublewin = true;
           }
@@ -10721,7 +10721,7 @@ function Placements() {
         }
         else
         {
-          if(Bottoms[i].finalscore >= 15)
+          if(Bottoms[i].finalscore >= 30)
           {
             BottomQueens.push(Bottoms[i]);
           }
@@ -12416,12 +12416,12 @@ function RankQueens(){
       case "LIFE":
       if(CurrentSeason.currentCast.length>=14)
       {
-        for(let i = 0; i<getRandomInt(3,4); i++)
+        for(let i = 0; i<3; i++)
           {
             Tops.push(CurrentSeason.currentCast[i]);
           }
 
-          for(let i = 0; i<getRandomInt(3,4); i++)
+        for(let i = 0; i<3; i++)
           {
             Bottoms.push(CurrentSeason.currentCast[CurrentSeason.currentCast.length-1-i]);
           }
@@ -12507,12 +12507,12 @@ function RankQueens(){
         }
         else
         {
-          for(let i = 0; i<getRandomInt(3,4); i++)
+        for(let i = 0; i<3; i++)
           {
             Tops.push(CurrentSeason.currentCast[i]);
           }
 
-          for(let i = 0; i<getRandomInt(3,4); i++)
+        for(let i = 0; i<3; i++)
           {
               Bottoms.push(CurrentSeason.currentCast[CurrentSeason.currentCast.length-1-i]);
           }
@@ -12664,12 +12664,12 @@ function RankQueens(){
         }
         else
         {
-          for(let i = 0; i<getRandomInt(3,4); i++)
+          for(let i = 0; i<3; i++)
           {
             Tops.push(CurrentSeason.currentCast[i]);
           }
 
-          for(let i = 0; i<(3,4); i++)
+          for(let i = 0; i<getRandomInt(3,4); i++)
           {
               Bottoms.push(CurrentSeason.currentCast[CurrentSeason.currentCast.length-1-i]);
           }
